@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+}
+
+div #ham-menu {
+    visibility: hidden;
+    color: #fff;
 }
 
 div.nav-bar {
@@ -20,6 +26,7 @@ div.logo {
     color: #bcc3c7;
 }
 
+
 ul.nav-links {
     display: flex;
     margin: 0;
@@ -32,17 +39,22 @@ ul li {
     font-size: 1.1rem;
 }
 
+/* styling the links */
+
 ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
+
+    /*float: right;*/
 }
+
 
 ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
-}
+} 
 
 div.hero-section {
     background: #304353;
@@ -344,4 +356,92 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+
+
+@media (max-width: 720px) {
+    div.nav-bar {
+        background-color: #000;
+        width: auto;
+        height: auto;
+        justify-content:unset;
+        text-align: left;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+/* display only Snapshot heading */
+
+    div.logo {
+        display: block;
+        text-align: center;
+        padding: 0;
+}
+
+    div #ham-menu{
+        visibility: visible;
+    }
+
+    
+   
+/* links to not display when width is < than 720*/
+    ul.nav-links {
+        display: none;
+    }
+
+    ul li{
+        list-style-type: none;
+    }
+
+    ul li a{
+        display: block;
+    }
+
+    ul li a{
+        padding: 0.5rem;
+        float: none;
+        text-align: center;
+    }
+
+    div.hero-background-pos {
+        display:none;
+    }
+
+    .hero-section {
+        text-align: justify;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    div.snapshot-box-content {
+        display: inline;
+
+}
+    div.background {
+        height: auto;
+        padding-bottom: 60px;
+        padding-top: 30px;
+
+}
+    div.hero-section {
+        padding: 50px;
+    }
+
+    input {
+        text-align: center;
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
 }

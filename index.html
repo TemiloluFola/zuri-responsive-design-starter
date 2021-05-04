@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ac06212b39.js" crossorigin="anonymous">                 
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </script>
+    <script src="responsive.js">
+    </script>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">Snapshot</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="nav-bar" id="myNavBar">
+        <div class="logo" id="active">Snapshot</div>
+        <div class="hamburger">
+            <i class="fas fa-bars" id="ham-menu" onclick="DispMenu()"></i> 
+        
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Hero section -->
